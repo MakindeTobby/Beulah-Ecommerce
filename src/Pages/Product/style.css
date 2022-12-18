@@ -1,0 +1,49 @@
+.tiny:hover {
+    border: 3px solid hsl(26, 100%, 55%);
+    background-color: wheat;
+  }
+  
+  .tiny:focus-within {
+    border: 3px solid hsl(26, 100%, 55%);
+  }
+  
+  .cart {
+    background-color: hsl(26, 100%, 55%) !important;
+    border: hsl(26, 100%, 55%) !important;
+  }
+  
+  .txt {
+    color: hsl(26, 100%, 55%);
+    animation-delay: 1s;
+  }
+  
+  .txt2 {
+    animation-delay: 1.5s;
+  }
+  
+  .anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.8s linear forwards;
+  }
+  
+  @keyframes moveup {
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .Pfirst,.psec{
+    width: 50%;
+  }
+  
+  
+@media (max-width: 1015px) {
+
+   .pmain{
+    flex-direction: column;
+   } 
+   .Pfirst,.psec{
+    width: 100%;
+  }
+}
